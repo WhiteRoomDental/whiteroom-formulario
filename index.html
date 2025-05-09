@@ -21,12 +21,17 @@
     <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
     <button type="submit">Enviar</button>
   </form>
-
   <!-- Formulario oculto para Netlify Forms -->
   <form name="contacto" netlify hidden>
     <input type="text" name="nombre">
     <input type="email" name="email">
     <textarea name="mensaje"></textarea>
   </form>
+  <!-- Este bloque oculto fuerza a Netlify a detectar el formulario -->
+<form name="contacto" netlify hidden>
+  <input type="text" name="nombre">
+  <input type="email" name="email">
+  <textarea name="mensaje"></textarea>
+</form>
 </body>
 </html>
