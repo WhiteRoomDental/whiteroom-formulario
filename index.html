@@ -13,27 +13,15 @@
 </head>
 <body>
   <h1>Contáctanos</h1>
-  <form name="contacto" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-    <input type="hidden" name="form-name" value="contacto">
-    <p hidden><input name="bot-field"></p>
+  <form action="https://formsubmit.co/ariana.danieldra@gmail.com" method="POST">
     <input type="text" name="nombre" placeholder="Tu nombre" required>
     <input type="email" name="email" placeholder="Tu correo" required>
     <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://whiteroom.netlify.app">
+
     <button type="submit">Enviar</button>
-    <!-- Fuerzo redeploy Netlify -->
   </form>
-  <!-- Formulario oculto para Netlify Forms -->
-  <form name="contacto" netlify hidden>
-    <input type="text" name="nombre">
-    <input type="email" name="email">
-    <textarea name="mensaje"></textarea>
-    Forzado redeploy para eliminar errores
-  </form>
-  <!-- Este bloque oculto fuerza a Netlify a detectar el formulario -->
-<form name="contacto" netlify hidden>
-  <input type="text" name="nombre">
-  <input type="email" name="email">
-  <textarea name="mensaje"></textarea>
-</form>
 </body>
 </html>
