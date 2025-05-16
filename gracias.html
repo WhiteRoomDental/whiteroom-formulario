@@ -7,51 +7,51 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #000;
       text-align: center;
-      padding: 3rem;
-      background-color: #f9f9f9;
-      color: #333;
+      padding: 2rem;
     }
-    img.logo {
-      height: 60px;
-      margin-bottom: 1.5rem;
-    }
-    h1 {
-      color: #25D366;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.2rem;
+    .logo {
+      max-width: 250px;
       margin-bottom: 2rem;
     }
-    img.illustration {
-      max-width: 250px;
-      margin: 2rem auto;
-      display: block;
-      border-radius: 10px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #25D366;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    img.thankyou {
+      max-width: 300px;
+      border-radius: 12px;
+      margin-top: 1rem;
     }
     a {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #000;
-      color: #fff;
+      color: #007BFF;
       text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.3s;
+      font-weight: bold;
     }
     a:hover {
-      background-color: #333;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <img src="logo-01.jpg" alt="Whiteroom Logo" class="logo">
-  <h1>¡Gracias por tu mensaje!</h1>
-  <p>Hemos recibido tu información y nos pondremos en contacto contigo muy pronto.</p>
-  <img src="gracias.jpg" alt="Gracias ilustración" class="illustration">
-  <a href="index.html">Volver al inicio</a>
+  <div class="container">
+    <img src="logo-01.jpg" alt="Whiteroom Logo" class="logo">
+    <h1>¡Gracias por tu mensaje!</h1>
+    <p>Hemos recibido tu información y nos pondremos en contacto contigo muy pronto.</p>
+    <a href="index.html">Volver al inicio</a>
+    <img src="gracias.jpg" alt="Gracias" class="thankyou">
+  </div>
 </body>
 </html>
-
-<!-- Cambio forzado para redeploy -->
