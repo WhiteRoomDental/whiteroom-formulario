@@ -14,44 +14,43 @@
       padding: 2rem;
     }
     .logo {
-      max-width: 250px;
+      max-width: 200px;
       margin-bottom: 2rem;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
     h1 {
       font-size: 2rem;
-      color: #25D366;
+      color: #000;
+      margin-bottom: 1rem;
     }
     p {
       font-size: 1.1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
     img.thankyou {
       max-width: 300px;
       border-radius: 12px;
-      margin-top: 1rem;
+      margin-bottom: 2rem;
     }
-    a {
-      color: #007BFF;
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #000;
+      color: #fff;
       text-decoration: none;
-      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+    a.button:hover {
+      background-color: #333;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo-01.jpg" alt="Whiteroom Logo" class="logo">
-    <h1>¡Gracias por tu mensaje!</h1>
-    <p>Hemos recibido tu información y nos pondremos en contacto contigo muy pronto.</p>
-    <a href="index.html">Volver al inicio</a>
-    <img src="gracias.jpg" alt="Gracias" class="thankyou">
-  </div>
+  <img src="logo-01.jpg" alt="Whiteroom Logo" class="logo">
+  <h1>¡Gracias por tu mensaje!</h1>
+  <p>Hemos recibido tu información y nos pondremos en contacto contigo muy pronto.</p>
+  <img src="gracias.jpg" alt="Gracias" class="thankyou">
+  <br>
+  <a href="index.html" class="button">Volver al inicio</a>
 </body>
 </html>
